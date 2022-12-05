@@ -22,6 +22,10 @@ main {
     background: #cccccc;
     text-align: center;
 }
+.sobre-barbearia h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
 .missao-p {
     font-size: 20px
 }
@@ -29,26 +33,36 @@ main {
     color: #ff0000;
 }
 
-.item {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-}
-.itens {
-    font-style: italic;
-}
-
 .beneficios {
+    box-sizing: border-box;
+    display: inline-block;
     padding: 20px;
-    background: whitesmoke;
+    background: #f5f5f5;
+    height: 500px;
+    width: 100%;
 }
 .beneficios h2 {
     text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.itens-beneficios {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+.itens {
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin: 50px auto;
 }
 
 .img-beneficios {
+    height: 400px;
     width: 50%;
+    border-radius: 20px
 }
 
 /* .img-beneficios {

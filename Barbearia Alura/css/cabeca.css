@@ -25,10 +25,9 @@
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.5s all;
 }
 .nav-bar a:hover {
-    transition: 0.5s;
     color: #c78c19;
 }
 .nav-bar a:active {
@@ -70,10 +69,9 @@
 }
 .lucas {
     text-decoration: none;
-    color: #c78c19;
-    transition: 0.5s;
+    color: #ff8c00;
+    transition: 0.5s all;
 }
 .lucas:hover {
-    color: #085819;
-    transition: 0.5s;
+    color: #0A66C2;
 }
