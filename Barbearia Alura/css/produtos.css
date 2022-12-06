@@ -1,16 +1,11 @@
 
-main {
-    width: 90%;
-    margin: 0 auto;
-}
-
 .produtos {
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
 }
 .produtos li {
-    /* background: #eeeeee; */
+    background: #ffffff;
     display: inline-block;
     text-align: center;
     width: 30%;

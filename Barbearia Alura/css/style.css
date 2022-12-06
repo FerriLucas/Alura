@@ -1,39 +1,50 @@
-
-main {
-    width: 90%;
+/*   Img Principal   */
+.banner-01 {
     margin: 0 auto;
-}
-
-.titulo-principal {
-    margin-left: 20px;
-}
-
-.img-barber {
-    margin: 0 auto;
-    height: 500px;
     background-image: url("../imagens/img-01.png");
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+    max-width: 1920px;
+    height: 500px;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
+/* ^ Img Principal ^ */
 
-.sobre-barbearia {
+/*   Section 01   */
+.sec-01 {
     padding: 30px;
     background: #cccccc;
+}
+.titulo-01 {
     text-align: center;
-}
-.sobre-barbearia h1 {
     font-size: 40px;
-    margin-bottom: 50px;
-}
-.missao-p {
-    font-size: 20px
-}
-.strong-p {
-    color: #ff0000;
+    margin: 20px 0px 50px;
 }
 
-.beneficios {
+.sec-01 p {
+    margin: 0 20px 1em 20px;
+}
+.sec-01 em {
+    font-style: italic;
+}
+
+.img-p {
+    width: 150px;
+    float: left;
+}
+.missao-p {
+    font-size: 20px;
+}
+.strong-p {
+    font-weight: bold;
+    color: #ff0000;
+}
+/* ^ Section 01 ^ */
+
+/*   Section 02   */
+.sec-02 {
+    clear: left;
     box-sizing: border-box;
     display: inline-block;
     padding: 20px;
@@ -41,7 +52,7 @@ main {
     height: 500px;
     width: 100%;
 }
-.beneficios h2 {
+.titulo-02 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 40px;
@@ -60,10 +71,11 @@ main {
 }
 
 .img-beneficios {
-    height: 400px;
+    max-width: 400px;
     width: 50%;
     border-radius: 20px
 }
+/* ^ Section 02 ^ */
 
 /* .img-beneficios {
     background-image: url("./img-02.png");
