@@ -12,6 +12,7 @@
 /* ^ Img Principal ^ */
 
 /*   Section 01   */
+/* SOBRE */
 .sec-01 {
     padding: 30px;
     background: #cccccc;
@@ -22,7 +23,7 @@
     margin: 20px 0px 50px;
 }
 
-.sec-01 p {
+.sec-01 p, .sec-02 p {
     margin: 0 20px 1em 20px;
 }
 .sec-01 em {
@@ -43,19 +44,35 @@
 /* ^ Section 01 ^ */
 
 /*   Section 02   */
+/* MAPA */
 .sec-02 {
-    clear: left;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 20px;
-    background: #f5f5f5;
-    height: 500px;
-    width: 100%;
+    text-align: center;
+    padding: 2em 0;
 }
-.titulo-02 {
+.titulo-02, .titulo-03 {
     text-align: center;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin: 40px;
+}
+.sec-02 p {
+    margin-bottom: 2em;
+}
+/* ^ Section 02 ^ */
+
+/*   Section 03   */
+/* BENEFICIOS */
+.sec-03 {
+    box-sizing: border-box;
+    clear: left;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+    width: 100%;
+}
+
+.beneficios {
+    margin: 1em auto;
 }
 
 .itens-beneficios {
@@ -71,18 +88,14 @@
 }
 
 .img-beneficios {
+    min-height: 300px;
     max-width: 400px;
     width: 50%;
     border-radius: 20px
 }
-/* ^ Section 02 ^ */
 
-/* .img-beneficios {
-    background-image: url("./img-02.png");
-    margin: 0 auto;
-    width: 90%;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+.video {
+    height: 480px;
+    margin: 1em auto;
+}
+/* ^ Section 03 ^ */
