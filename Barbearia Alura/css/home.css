@@ -130,3 +130,9 @@ main {
     margin: 5rem auto 3rem auto;
 }
 /* ^ Section 03 ^ */
+
+/*   Mobile   */
+@media screen and (max-width: 480px) {
+    
+}
+/* ^ Mobile ^ */
