@@ -80,3 +80,11 @@ header {
 .lucas:hover {
     color: #0A66C2;
 }
+
+/*   Mobile   */
+@media screen and (max-width: 480px) {
+    #cabeca {
+        position: absolute;
+    }
+}
+/* ^ Mobile ^ */
