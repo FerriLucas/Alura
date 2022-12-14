@@ -126,6 +126,7 @@ main {
 }
 
 .video {
+    width: 854px;
     height: 480px;
     margin: 5rem auto 3rem auto;
 }
@@ -133,6 +134,13 @@ main {
 
 /*   Mobile   */
 @media screen and (max-width: 480px) {
-    
+
+    #sec-00 {
+        width: 100%;
+    }
+    .video {
+        width: 426px;
+        height: 240px;
+    }
 }
 /* ^ Mobile ^ */

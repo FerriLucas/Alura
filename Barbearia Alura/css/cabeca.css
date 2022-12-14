@@ -4,6 +4,7 @@ header {
     box-shadow: inset 0 -8px 20px 0 #000000;
 }
 
+/*   Header   */
 .cabeca {
     background: #bbbbbb;
     padding: 20px 0;
@@ -55,13 +56,9 @@ header {
         position: static;
     }
 }
+/* ^ Header ^ */
 
-/* MOBILE */
-@media (max-width: 450px) {
-
-}
-/* ^ MOBILE ^ */
-
+/*   Footer   */
 .copyright {
     text-align: center;
     background: url("../imagens/bg.jpg");
@@ -80,11 +77,10 @@ header {
 .lucas:hover {
     color: #0A66C2;
 }
+/* ^ Footer ^ */
 
 /*   Mobile   */
 @media screen and (max-width: 480px) {
-    #cabeca {
-        position: absolute;
-    }
+    
 }
 /* ^ Mobile ^ */
