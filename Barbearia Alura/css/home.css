@@ -138,6 +138,13 @@ main {
     #sec-00 {
         width: 100%;
     }
+    .img-beneficios {
+        width: 90%;
+    }
+    .itens-beneficios {
+        width: 90%;
+    }
+
     .video {
         width: 426px;
         height: 240px;

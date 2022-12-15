@@ -48,3 +48,22 @@
     transition: 0.5s;
     color: #c78c19;
 }
+
+/*   Mobile   */
+@media screen and (max-width: 480px) {
+
+    .produtos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .produtos li {
+        margin: 40px;
+        width: 90%;
+    }
+    .bor-01, .bor-02, .bor-03 {
+        border-radius: 30px 30px 30px 30px;
+    }
+}
+/* ^ Mobile ^ */
