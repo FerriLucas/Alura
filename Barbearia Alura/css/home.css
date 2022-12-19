@@ -125,6 +125,7 @@ main {
     box-shadow: none;
 }
 
+/* 480P */
 .video {
     width: 854px;
     height: 480px;
@@ -132,12 +133,18 @@ main {
 }
 /* ^ Section 03 ^ */
 
-/*   Mobile   */
-@media screen and (max-width: 480px) {
+/*   Responsiveness   */
+@media screen and (max-width: 1000px) {
 
-    #sec-00 {
-        width: 100%;
+    /* 360P */
+    .video {
+        width: 640px;
+        height: 360px;
     }
+}
+
+@media screen and (max-width: 760px) {
+
     .img-beneficios {
         width: 90%;
     }
@@ -146,8 +153,32 @@ main {
     }
 
     .video {
-        width: 426px;
+        width: 533px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    #sec-00 {
+        width: 100%;
+    }
+
+    .itens:hover, .img-beneficios:hover {
+        display: none;
+    }
+
+    .video {
+        width: 90%;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* 240P */
+    .video {
         height: 240px;
     }
 }
-/* ^ Mobile ^ */
+/* ^ Responsiveness ^ */

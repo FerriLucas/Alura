@@ -84,8 +84,8 @@
     background: #085819;
 }
 
-/*   Mobile   */
-@media screen and (max-width: 480px) {
+/*   Responsiveness   */
+@media screen and (max-width: 550px) {
 
     .container-formulario {
         display: flex;
@@ -94,10 +94,18 @@
     }
 
     .tabela {
-        width: 60%;
+        width: 90%;
     }
+}
+
+@media screen and (max-width: 480px) {
+
     .enviar {
         width: 200px;
     }
+
+    .enviar:hover, .enviar:active {
+        display: none;
+    }
 }
-/* ^ Mobile ^ */
+/* ^ Responsiveness ^ */

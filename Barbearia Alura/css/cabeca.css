@@ -42,20 +42,6 @@ header {
     color: #085819;
     font-size: 23px;
 }
-
-@media (max-width: 1000px) {
-    .cabeca {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 300px;
-    }
-    .nav-bar {
-        position: static;
-    }
-}
 /* ^ Header ^ */
 
 /*   Footer   */
@@ -79,8 +65,26 @@ header {
 }
 /* ^ Footer ^ */
 
-/*   Mobile   */
-@media screen and (max-width: 480px) {
+/*   Responsiveness   */
+@media (max-width: 1000px) {
     
+    .cabeca {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 300px;
+    }
+    .nav-bar {
+        position: static;
+    }
 }
-/* ^ Mobile ^ */
+
+@media screen and (max-width: 480px) {
+
+    .nav-bar a:hover, .nav-bar a:active, .lucas:hover {
+        display: none;
+    }
+}
+/* ^ Responsiveness ^ */
