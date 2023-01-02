@@ -3,6 +3,8 @@
 
     background-color: #1d232a;
     color: #ffffff;
+
+    cursor: default;
 }
 
 .cabeca {
@@ -17,22 +19,79 @@
     background-color: transparent;
     border: none;
 }
-.cabeca-logo {
+.cabeca-logo/*, .menu-lateral-logo*/ {
     height: 50px;
+    width: 50px;
 }
 @media screen and (min-width: 760px) {
-    .cabeca-menu, .cabeca-logo, .cabeca-not {
+    .cabeca-menu, .cabeca-logo, .cabeca-not, .menu-lateral-link .bi {
         cursor: pointer;
     }
-    .cabeca-logo {
+    .cabeca-logo/*, .menu-lateral-logo*/ {
         height: 80px;
+        width: 80px;
         transition: 1s;
     }
     .cabeca-logo:hover {
         translate: 0 -5px;
     }
+
+    .menu-lateral {
+        /* position: absolute; */
+        max-width: 25vw;
+    }
+    .menu-lateral-link:hover .bi {
+        color: #ffffff;
+    }
+    .menu-lateral-link:hover {
+        padding-left: 56px;
+        border-left: solid 8px #ffffff;
+    }
 }
-.bi {
+
+/* Header Menu Icons Bootstrap */
+.cabeca-menu .bi, .cabeca-not .bi {
     font-size: 25px;
     background-color: transparent;
 }
+/* Menu Lateral Icons Bootstrap */
+.menu-lateral-link .bi {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    background-color: transparent;
+    padding: 10px;
+    color: #95999c;
+}
+
+/* Menu Lateral */
+.menu-lateral {
+    position: absolute;
+    left: -100vw;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #15191c;
+    width: 75vw;
+    height: 100vh;
+    transition: 1.5s;
+}
+.menu-lateral-active {
+    left: 0;
+    transition: .8s;
+}
+/* .menu-lateral-logo {
+    align-self: center;
+    padding: 16px;
+    background-color: transparent;
+} */
+.menu-lateral-link {
+    display: inline-block;
+    align-items: center;
+    height: 30px;
+    padding: 20px 64px;
+    background-color: transparent;
+    color: #95999c;
+    text-decoration: none;
+}
+
