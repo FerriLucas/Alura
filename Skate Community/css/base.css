@@ -17,21 +17,22 @@
     background-color: transparent;
     border: none;
 }
-.cabeca-menu {
-
-}
 .cabeca-logo {
-    height: 100px;
+    height: 50px;
 }
 @media screen and (min-width: 760px) {
-    .cabeca-logo {
+    .cabeca-menu, .cabeca-logo, .cabeca-not {
         cursor: pointer;
+    }
+    .cabeca-logo {
+        height: 80px;
         transition: 1s;
     }
     .cabeca-logo:hover {
         translate: 0 -5px;
     }
 }
-.cabeca-not {
-
+.bi {
+    font-size: 25px;
+    background-color: transparent;
 }
