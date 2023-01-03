@@ -13,22 +13,23 @@
     align-items: center;
     background-color: #15191c;
     padding: 8px 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 4px red;  /*ERRO!*/
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16); */
 }
 .cabeca-menu, .cabeca-logo, .cabeca-not {
     background-color: transparent;
     border: none;
 }
-.cabeca-logo/*, .menu-lateral-logo*/ {
-    height: 50px;
+.cabeca-logo {
+    height: 60px;
     width: 50px;
 }
 @media screen and (min-width: 760px) {
-    .cabeca-menu, .cabeca-logo, .cabeca-not, .menu-lateral-link .bi {
+    .cabeca-menu, .cabeca-logo, .cabeca-not, .menu-lateral-link .bi, .rodape a {
         cursor: pointer;
     }
-    .cabeca-logo/*, .menu-lateral-logo*/ {
-        height: 80px;
+    .cabeca-logo {
+        height: 90px;
         width: 80px;
         transition: 1s;
     }
@@ -37,8 +38,8 @@
     }
 
     .menu-lateral {
-        /* position: absolute; */
-        max-width: 25vw;
+        position: absolute;
+        max-width: 300px;
     }
     .menu-lateral-link:hover .bi {
         color: #ffffff;
@@ -46,6 +47,13 @@
     .menu-lateral-link:hover {
         padding-left: 56px;
         border-left: solid 8px #ffffff;
+    }
+    .rodape a:hover {
+        color: #0A66C2;
+        transition: .5s;
+    }
+    .rodape a:hover, .menu-lateral-link:hover {
+        text-decoration: underline;
     }
 }
 
@@ -80,11 +88,14 @@
     left: 0;
     transition: .8s;
 }
-/* .menu-lateral-logo {
+.menu-lateral-logo {
     align-self: center;
     padding: 16px;
     background-color: transparent;
-} */
+
+    height: 70px;
+    width: 150px;
+}
 .menu-lateral-link {
     display: inline-block;
     align-items: center;
@@ -95,3 +106,23 @@
     text-decoration: none;
 }
 
+/* Rodape */
+@media (max-width: px) {
+
+}
+.rodape {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #15191c;
+    padding: 10px;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.16);
+}
+.rodape p, a {
+    background-color: transparent;
+}
+.rodape a {
+    text-decoration: none;
+    transition: 0.8s;
+}
