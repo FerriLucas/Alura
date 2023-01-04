@@ -1,4 +1,69 @@
-
 .sec-00 {
     height: 1000px;
+}
+.titulo-sec {
+    margin-left: 10px;
+    padding: 10px;
+}
+.card {
+    border-radius: 40px;
+    background-color: #2C343A;
+}
+.cad-content, .card-destaque, .card-titulo, .card-perfil, .card-info, .card-btn {
+    background-color: transparent;
+}
+
+.card-img {
+
+}
+.cad-content {
+    display: grid;
+}
+.card-destaque {
+
+}
+.card-titulo {
+
+}
+.card-perfil {
+
+}
+.card-info {
+
+}
+.card-info-time {
+
+}
+.card-info-views {
+
+}
+
+.card-btn {
+    border-radius: 10px;
+    background-color: #0480DC;
+    border: none;
+    padding: 5px;
+}
+.card-btn-play {
+
+}
+.card-btn-01 {
+
+}
+/* Card Info Icons Bootstrap */
+.card-info .bi {
+
+}
+/* Card Btn Icons Bootstrap */
+.card-btn .bi {
+
+}
+
+@media screen and (min-width: 760px) {
+    .card-btn {
+        cursor: pointer;
+    }
+    .card-btn:hover {
+
+    }
 }

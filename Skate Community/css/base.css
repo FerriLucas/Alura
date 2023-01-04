@@ -7,14 +7,14 @@
     cursor: default;
 }
 
+/* Header Menu Bar */
 .cabeca {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #15191c;
     padding: 8px 16px;
-    box-shadow: 0px 4px 4px red;  /*ERRO!*/
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 .cabeca-menu, .cabeca-logo, .cabeca-not {
     background-color: transparent;
@@ -25,6 +25,10 @@
     width: 50px;
 }
 @media screen and (min-width: 760px) {
+    .cabeca {
+        position: sticky;
+        z-index: 100;
+    }
     .cabeca-menu, .cabeca-logo, .cabeca-not, .menu-lateral-link .bi, .rodape a {
         cursor: pointer;
     }
@@ -38,7 +42,6 @@
     }
 
     .menu-lateral {
-        position: absolute;
         max-width: 300px;
     }
     .menu-lateral-link:hover .bi {
@@ -60,16 +63,18 @@
 /* Header Menu Icons Bootstrap */
 .cabeca-menu .bi, .cabeca-not .bi {
     font-size: 25px;
-    background-color: transparent;
 }
 /* Menu Lateral Icons Bootstrap */
 .menu-lateral-link .bi {
     width: 24px;
     height: 24px;
     font-size: 24px;
-    background-color: transparent;
     padding: 10px;
     color: #95999c;
+}
+/* Transparent Background Bootstrap Icons */
+.bi {
+    background-color: transparent;
 }
 
 /* Menu Lateral */
