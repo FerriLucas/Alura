@@ -1,11 +1,16 @@
 .sec-00 {
     height: 1000px;
+    padding: 24px 16px;
 }
 .titulo-sec {
     margin-left: 10px;
     padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 .card {
+    width: 100%;
+    overflow: hidden;
     border-radius: 40px;
     background-color: #2C343A;
 }
@@ -14,41 +19,64 @@
 }
 
 .card-img {
-
+    width: 400px;
 }
 .cad-content {
+    padding: 16px;
     display: grid;
 }
 .card-destaque {
 
 }
 .card-titulo {
-
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 .card-perfil {
-
+    color: #95999c;
+    font-size: 0.9rem;
 }
 .card-info {
-
+    display: flex;
+    align-items: center;
+    color: #99959c;
 }
-.card-info-time {
-
+.card-info-time, .card-info-views {
+    margin-right: 8px;
 }
-.card-info-views {
-
+.card-info .bi {
+    color: #99959c;
 }
 
 .card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 0.9rem;
     border-radius: 10px;
     background-color: #0480DC;
     border: none;
     padding: 5px;
 }
-.card-btn-play {
 
+.card-btn-play {
+    font-size: 24px;
+}
+.card-btn-play::before {
+    font-size: 30px;
+}
+.card-btn-play .bi {
+    margin-right: 8px;
 }
 .card-btn-01 {
-
+    width: 100%;
+}
+.card-btn-01::before {
+    margin-right: 8px;
 }
 /* Card Info Icons Bootstrap */
 .card-info .bi {
@@ -57,6 +85,15 @@
 /* Card Btn Icons Bootstrap */
 .card-btn .bi {
 
+}
+
+@media screen and (min-width: 430px) {
+    .card-img {
+        width: 100vw;
+    }
+    .sec-00 {
+        padding: 24px 10%;
+    }
 }
 
 @media screen and (min-width: 760px) {
