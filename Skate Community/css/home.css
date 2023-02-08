@@ -1,6 +1,7 @@
 .sec-00 {
-    height: 1000px;
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 .titulo-sec {
     margin-left: 10px;
@@ -8,12 +9,28 @@
     font-size: 2rem;
     font-weight: bold;
 }
+
+.sec-01 {
+    display: grid;
+    gap: 16px;
+}
+.titulo-sec-01 {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .card {
     width: 100%;
     overflow: hidden;
     border-radius: 40px;
     background-color: #2C343A;
 }
+.card--destaque {
+    margin-bottom: 16px;
+}
+
 .cad-content, .card-destaque, .card-titulo, .card-perfil, .card-info, .card-btn {
     background-color: transparent;
 }
@@ -24,9 +41,11 @@
 .cad-content {
     padding: 16px;
     display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 8px;
 }
-.card-destaque {
-
+.card-destaque, .card-titulo, .card-perfil, .card-btn {
+    grid-column: span 2;
 }
 .card-titulo {
     font-size: 1.2rem;
@@ -57,14 +76,28 @@
     height: 40px;
 
     font-size: 0.9rem;
-    border-radius: 10px;
+    border-radius: 40px;
     background-color: #0480DC;
     border: none;
     padding: 5px;
+
+    justify-self: flex-end;
+}
+.card-btn-b {
+    width: 40px;
+    height: 40px;
+
+    font-size: 0.9rem;
+    border-radius: 40px;
+    background-color: #0480DC;
+    border: none;
+    padding: 5px;
+
+    justify-self: flex-end;
 }
 
 .card-btn-play {
-    font-size: 24px;
+    font-size: 20px;
 }
 .card-btn-play::before {
     font-size: 30px;
@@ -72,10 +105,10 @@
 .card-btn-play .bi {
     margin-right: 8px;
 }
-.card-btn-01 {
+.card-btn-destaque {
     width: 100%;
 }
-.card-btn-01::before {
+.card-btn-destaque::before {
     margin-right: 8px;
 }
 /* Card Info Icons Bootstrap */
@@ -97,6 +130,9 @@
 }
 
 @media screen and (min-width: 760px) {
+    .card-btn-play {
+        font-size: 24px;
+    }
     .card-btn {
         cursor: pointer;
     }

@@ -27,7 +27,6 @@
 @media screen and (min-width: 760px) {
     .cabeca {
         position: sticky;
-        z-index: 100;
     }
     .cabeca-menu, .cabeca-logo, .cabeca-not, .menu-lateral-link .bi, .rodape a {
         cursor: pointer;
